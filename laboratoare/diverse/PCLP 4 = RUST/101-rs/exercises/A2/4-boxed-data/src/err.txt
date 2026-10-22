@@ -1,0 +1,13 @@
+error: mismatched closing delimiter: `}`
+   --> main.rs:102:9
+    |
+84  | fn main() {
+    |           - closing delimiter possibly meant for this
+...
+102 |     test(Summation(vec![Var, Const(1)]);
+    |         ^ unclosed delimiter
+103 | }
+    | ^ mismatched closing delimiter
+
+error: aborting due to previous error
+

@@ -1,0 +1,70 @@
+error[E0107]: enum takes 2 generic arguments but 1 generic argument was supplied
+   --> main.rs:5:34
+    |
+5   | fn read_lines(filename: &str) -> Result<Lines<BufReader<File>, io::Error>> {
+    |                                  ^^^^^^ --------------------------------- supplied 1 generic argument
+    |                                  |
+    |                                  expected 2 generic arguments
+    |
+note: enum defined here, with 2 generic parameters: `T`, `E`
+   --> /home/bogdan/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:502:10
+    |
+502 | pub enum Result<T, E> {
+    |          ^^^^^^ -  -
+help: add missing generic argument
+    |
+5   | fn read_lines(filename: &str) -> Result<Lines<BufReader<File>, io::Error>, E> {
+    |                                                                          +++
+
+error[E0107]: struct takes 1 generic argument but 2 generic arguments were supplied
+    --> main.rs:5:41
+     |
+5    | fn read_lines(filename: &str) -> Result<Lines<BufReader<File>, io::Error>> {
+     |                                         ^^^^^                  --------- help: remove this generic argument
+     |                                         |
+     |                                         expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `B`error[E0107]: enum takes 2 generic arguments but 1 generic argument was supplied
+   --> main.rs:5:34
+    |
+5   | fn read_lines(filename: &str) -> Result<Lines<BufReader<File>, io::Error>> {
+    |                                  ^^^^^^ --------------------------------- supplied 1 generic argument
+    |                                  |
+    |                                  expected 2 generic arguments
+    |
+note: enum defined here, with 2 generic parameters: `T`, `E`
+   --> /home/bogdan/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:502:10
+    |
+502 | pub enum Result<T, E> {
+    |          ^^^^^^ -  -
+help: add missing generic argument
+    |
+5   | fn read_lines(filename: &str) -> Result<Lines<BufReader<File>, io::Error>, E> {
+    |                                                                          +++
+
+error[E0107]: struct takes 1 generic argument but 2 generic arguments were supplied
+    --> main.rs:5:41
+     |
+5    | fn read_lines(filename: &str) -> Result<Lines<BufReader<File>, io::Error>> {
+     |                                         ^^^^^                  --------- help: remove this generic argument
+     |                                         |
+     |                                         expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `B`
+    --> /home/bogdan/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/io/mod.rs:2847:12
+     |
+2847 | pub struct Lines<B> {
+     |            ^^^^^ -
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0107`.
+
+    --> /home/bogdan/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/io/mod.rs:2847:12
+     |
+2847 | pub struct Lines<B> {
+     |            ^^^^^ -
+
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0107`.

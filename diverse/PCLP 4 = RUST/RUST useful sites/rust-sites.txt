@@ -1,0 +1,12 @@
+Rust playground : https://play.rust-lang.org/?version=stable&mode=debug&edition=2021
+	- for building, running and debugging Rust code
+	
+	
+Tour of Rust : https://tourofrust.com/
+	- for learning Rust from stractch to intermediate level
+	- examples with codes
+	- for building, running and debugging Rust code
+
+
+101-rs: https://github.com/UPB-CS-Rust/101-rs
+

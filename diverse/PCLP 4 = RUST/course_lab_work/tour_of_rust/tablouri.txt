@@ -1,0 +1,7 @@
+Un tablou este o colecție de dimensiune fixă de elemente care conțin date de același tip.
+
+Tipul de date pentru un tablou este scris sub forma [T;N], unde T reprezintă tipul elementelor, iar N reprezintă dimensiunea fixă cunoscută la momentul compilării.
+
+Elemente individuale pot fi accesate cu ajutorul operatorului [x], unde x este un index usize (începând cu 0) al elementului pe care doriți să-l accesați.
+
+Colecțiile cu dimensiune dinamică, deseori numite tablouri dinamice sau variabile, vă vor fi prezentate într-un capitol viitor numit Vectori.
